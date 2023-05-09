@@ -3,6 +3,7 @@ import { Stack } from "@mui/material";
 import { Link } from "react-router-dom";
 import { logo } from "../utils/constants";
 import SearchBar from "./SearchBar";
+import {Box} from "@mui/material"
 
 const Navbaar = () => {
   return (
@@ -20,6 +21,7 @@ const Navbaar = () => {
       <Link to="/" style={{ display: "flex", alignItems: "center" }}>
         <img src={logo} alt="logo" height={45} />
       </Link>
+      <Box color="#fff" fontWeight="bold" fontSize="25px">SarangSharma</Box>
       <SearchBar />
     </Stack>
   );
